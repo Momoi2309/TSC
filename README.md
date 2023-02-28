@@ -11,3 +11,5 @@ Prezenta full : 2 pct din plus la nota
 git config --global user.name "your_username"
 git config --global user.mail "your_email_adress@example.com"
 git config --global --list
+
+ssh-keygen -t rsa -b 4096 -C "yourmail"
