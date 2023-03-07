@@ -1,0 +1,45 @@
+C:/Users/momoi/OneDrive/Desktop/lab2/lab2/test/test.v {1 {vlog -work work -vopt -stats=none C:/Users/momoi/OneDrive/Desktop/lab2/lab2/test/test.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab_dut/instr_register.sv {0 {vlog -work work -vopt -sv -stats=none C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab_dut/instr_register.sv
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module instr_register
+** Error: C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab_dut/instr_register.sv(10): (vlog-13006) Could not find the package (instr_register_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+** Error: (vlog-13069) C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab_dut/instr_register.sv(14): near "operand_a": syntax error, unexpected IDENTIFIER, expecting ')'.
+
+} {4.0 6.0} {}} C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab01_testbench-interface/top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab01_testbench-interface/top.sv
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module top
+-- Importing package instr_register_pkg
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab01_testbench-interface/tb_ifc.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab01_testbench-interface/tb_ifc.sv
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling interface tb_ifc
+-- Importing package instr_register_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab01_testbench-interface/instr_register_test.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab01_testbench-interface/instr_register_test.sv
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module instr_register_test
+-- Importing package instr_register_pkg
+
+Top level modules:
+	instr_register_test
+
+} {} {}} C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab_dut/instr_register_pkg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/momoi/OneDrive/Desktop/lab2/lab2/lab_dut/instr_register_pkg.sv
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling package instr_register_pkg
+
+Top level modules:
+	--none--
+
+} {} {}}
