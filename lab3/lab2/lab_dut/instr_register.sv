@@ -26,20 +26,25 @@ import instr_register_pkg::*;  // user-defined types are defined in instr_regist
   always@(posedge clk, negedge reset_n)   // write into register
     if (!reset_n) begin
       foreach (iw_reg[i])
-        iw_reg[i] = '{opc:ZERO,default:0};  // reset to all zeros
+        iw_reg[i] = '{opc:ZERO,op_a:0,op_b:0,result:0};  // reset to all zeros
     end
     else if (load_en) begin
-      iw_reg[write_pointer] = '{opcode,operand_a,operand_b};
+      iw_reg[write_pointer] = '{opcode,operand_a,operand_b,0};
+	  execute_operation(iw_reg[write_pointer]); //execute the operation
     end
+	
+	
 
   // read from the register
   assign instruction_word = iw_reg[read_pointer];  // continuously read from register
 
+//function to execute the operation and store the resut
+
 // compile with +define+FORCE_LOAD_ERROR to inject a functional bug for verification to catch
-`ifdef FORCE_LOAD_ERROR
-initial begin
-  force operand_b = operand_a; // cause wrong value to be loaded into operand_b
-end
-`endif
+//`ifdef FORCE_LOAD_ERROR
+//initial begin
+  //force operand_b = operand_a; // cause wrong value to be loaded into operand_b
+//end
+//`endif
 
 endmodule: instr_register
