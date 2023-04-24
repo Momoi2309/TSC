@@ -1,1 +1,0 @@
-call run_test.bat 7 1 889910 c %0
