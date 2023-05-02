@@ -9,7 +9,7 @@ commands. Following is the invocation command for the
 The output of the simulator should display the following results:
 
 
-Hello World!
+Hello World!!
 
 
 $finish called at simulation time 10
